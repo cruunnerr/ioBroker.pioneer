@@ -1,30 +1,29 @@
 {
-	"name": "iobroker.denon",
-	"version": "0.3.6",
-	"description": "ioBroker denon Adapter",
+	"name": "iobroker.pioneer",
+	"version": "0.0.1",
+	"description": "ioBroker pioneer Adapter",
 	"author": {
-		"name": "Moritz Heusinger",
-		"email": "moritz.heusinger@gmail.com"
+		"name": "Chris",
+		"email": "cruunnerr@gmail.com"
 	},
 	"contributors": [
 		{
-			"name": "Moritz Heusinger",
-			"email": "moritz.heusinger@gmail.com"
+			"name": "Chris",
+			"email": "cruunnerr@gmail.com"
 		}
 	],
-	"homepage": "https://github.com/foxriver76/ioBroker.denon",
+	"homepage": "https://github.com/cruunnerr/ioBroker.pioneer",
 	"license": "MIT",
 	"keywords": [
 		"ioBroker",
-		"denon",
-		"marantz",
+		"pioneer",
 		"avr",
 		"Smart Home",
 		"home automation"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/foxriver76/ioBroker.denon"
+		"url": "https://github.com/cruunnerr/ioBroker.pioneer"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -37,7 +36,7 @@
 		"test": "node node_modules/mocha/bin/mocha --exit"
 	},
 	"bugs": {
-		"url": "https://github.com/foxriver76/ioBroker.denon/issues"
+		"url": "https://github.com/cruunnerr/ioBroker.pioneer/issues"
 	},
 	"readmeFilename": "README.md"
 }

@@ -1,5 +1,5 @@
  /**
- * DENON AVR adapter
+ * PIONEER AVR adapter
  */
 
 /* jshint -W097 */// jshint strict:false

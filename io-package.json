@@ -125,7 +125,7 @@
 		"materialize": true,
 		"enabled": true,
 		"messagebox": true,
-		"extIcon": "https://raw.githubusercontent.com/foxriver76/ioBroker.denon/master/admin/denon.png",
+		"extIcon": "https://raw.githubusercontent.com/cruunnerr/ioBroker.pioneer/master/admin/pioneer.png",
 		"keywords": [
 			"denon",
 			"marantz",
@@ -133,7 +133,7 @@
 			"harmony",
 			"audio"
 		],
-		"readme": "https://github.com/foxriver76/ioBroker.denon/blob/master/README.md",
+		"readme": "https://github.com/cruunnerr/ioBroker.pioneer/blob/master/README.md",
 		"loglevel": "info",
 		"type": "multimedia"
 	},

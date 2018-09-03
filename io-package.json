@@ -1,6 +1,6 @@
 {
 	"common": {
-		"name": "denon",
+		"name": "pioneer",
 		"version": "0.3.6",
 		"news": {
 			"0.3.6": {
@@ -103,7 +103,7 @@
 				"de": "Initiale Version"
 			}
 		},
-		"title": "DENON AVR",
+		"title": "PIONEER AVR",
 		"desc": {
 			"en": "Control your DENON or Marantz AV Receiver",
 			"de": "Steuern Sie Ihren DENON oder Marantz AV-Receiver",

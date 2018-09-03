@@ -17,7 +17,7 @@ const ssdpScan = require('./lib/upnp').ssdpScan;
 // is called when adapter shuts down - callback has to be called under any circumstances!
 adapter.on('unload', callback => {
     try {
-        adapter.log.info('Stopping Denon AVR adapter...');
+        adapter.log.info('Stopping PIONEER AVR adapter...');
 	adapter.setState('info.connection', false, true);
 	client.destroy(); // kill connection
         client.unref();	// kill connection
@@ -55,7 +55,7 @@ adapter.on('message', obj => {
 
 adapter.on('ready', () => {
     if(adapter.config.ip) {
-    	adapter.log.info('Starting DENON AVR adapter');
+    	adapter.log.info('Starting PIONEER AVR adapter');
     	main();
     } else adapter.log.warn('No IP-address set');
 });
@@ -103,8 +103,8 @@ function main() {
     	} // endIf
     });
 
-    client.on('end', () => { // Denon has closed the connection
-        adapter.log.warn('Denon AVR has cancelled the connection');
+    client.on('end', () => { // PIONEER has closed the connection
+        adapter.log.warn('PIONEER AVR has cancelled the connection');
         pollingVar = false;
         adapter.setState('info.connection', false, true);
         if(!connectingVar) {
@@ -118,7 +118,7 @@ function main() {
 	clearTimeout(connectingVar);
 	connectingVar = null;
         adapter.setState('info.connection', true, true);
-        adapter.log.info('[CONNECT] Adapter connected to DENON-AVR: ' + host + ':8102');
+        adapter.log.info('[CONNECT] Adapter connected to PIONEER-AVR: ' + host + ':8102');
         adapter.log.debug('[CONNECT] Connected --> updating states on start');
         updateStates(); // Update states when connected
     });
@@ -526,7 +526,7 @@ function main() {
             adapter.setForeignObject(adapter.namespace, {
                 type: 'device',
                 common: {
-                    name: 'DENON device'
+                    name: 'PIONEER device'
                 }
             });
         } // endIf
@@ -688,10 +688,10 @@ function main() {
 	adapter.log.debug('[INFO] <== Command to handle is ' + command);
 	
 	switch(command) {
-		case 'PWON':
+		case 'PO':
 			adapter.setState('settings.powerSystem', true, true);
 			break;
-		case 'PWSTANDBY':
+		case 'PF':
 			adapter.setState('settings.powerSystem', false, true);
 			break;
 		case 'MV':
@@ -704,10 +704,10 @@ function main() {
 			adapter.setState('zoneMain.maximumVolume', parseFloat(data), true);
 		    	if(volumeInDB) adapter.setState('zoneMain.maximumVolumeDB', parseFloat(data)-80, true);
 			break;
-		case 'MUON':
+		case 'MO':
 			adapter.setState('zoneMain.muteIndicator', true, true);
 			break;
-		case 'MUOFF':
+		case 'MF':
 			adapter.setState('zoneMain.muteIndicator', false, true);
 			break;
 		case 'Z2ON':

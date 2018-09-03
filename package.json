@@ -3,13 +3,13 @@
 	"version": "0.3.6",
 	"description": "ioBroker pioneer Adapter",
 	"author": {
-		"name": "Moritz Heusinger",
-		"email": "moritz.heusinger@gmail.com"
+		"name": "cruunnerr", // original ioBroker.denon: Moritz Heusinger
+		"email": "cruunnerr@gmail.com" // original ioBroker.denon: moritz.heusinger@gmail.com
 	},
 	"contributors": [
 		{
-			"name": "Moritz Heusinger",
-			"email": "moritz.heusinger@gmail.com"
+			"name": "cruunnerr",
+			"email": "cruunnerr@gmail.com"
 		}
 	],
 	"homepage": "https://github.com/cruunnerr/ioBroker.pioneer",

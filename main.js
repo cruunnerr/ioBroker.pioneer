@@ -10,8 +10,8 @@
 const utils = require(__dirname + '/lib/utils'); // Get common adapter utils
 const net = require('net'); // import net
 
-// adapter will be restarted automatically every time as the configuration changed, e.g system.adapter.denon.0
-const adapter = new utils.Adapter('denon');
+// adapter will be restarted automatically every time as the configuration changed, e.g system.adapter.pioneer.0
+const adapter = new utils.Adapter('pioneer');
 const ssdpScan = require('./lib/upnp').ssdpScan;
 
 // is called when adapter shuts down - callback has to be called under any circumstances!
@@ -42,7 +42,7 @@ adapter.on('message', obj => {
                     'MX: 3\r\n' +
                     '\r\n', true, 4000, (err, result) => {
                         if(result) {
-                            result = result.filter(dev => dev.manufacturer && (dev.manufacturer.toLowerCase() === 'marantz' || dev.manufacturer.toLowerCase() === 'denon')).map(dev => {
+                            result = result.filter(dev => dev.manufacturer && (dev.manufacturer.toLowerCase() === 'marantz' || dev.manufacturer.toLowerCase() === 'pioneer')).map(dev => {
                         	return {ip: dev.ip, name: dev.name}
                             });
                         } // endIf

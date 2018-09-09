@@ -225,14 +225,14 @@ function main() {
 		case 'zoneMain.quickSelect':
 		    sendRequest('MSQUICK' + quickNr);
 		    break;
-		case 'zoneMain.equalizerBassUp':
-		    sendRequest('BI');
+		case 'zoneMain.InputTV':
+		    sendRequest('05FN');
 		    break;
-		case 'zoneMain.equalizerBassDown':
-		    sendRequest('BD');
+		case 'zoneMain.InputGame':
+		    sendRequest('49FN');
 		    break;
-		case 'zoneMain.equalizerTrebleUp':
-		    sendRequest('TI');
+		case 'zoneMain.InputInternetRadio':
+		    sendRequest('38FN');
 		    break;
 		case 'zoneMain.equalizerTrebleDown':
 		    sendRequest('TD');

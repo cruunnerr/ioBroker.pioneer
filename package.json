@@ -1,6 +1,6 @@
 {
 	"name": "iobroker.pioneer",
-	"version": "0.3.6",
+	"version": "0.3.7",
 	"description": "ioBroker pioneer Adapter",
 	"author": {
 		"name": "cruunnerr",

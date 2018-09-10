@@ -263,7 +263,7 @@
 				"write": true,
 				"read": true,
 				"states": {
-					"00FN": "PHONO",
+					"00FN": "PHONOs",
 					"01FN": "CD",
 					"02FN": "TUNER",
 					"04FN": "DVD",

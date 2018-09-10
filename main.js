@@ -219,7 +219,7 @@ function main() {
 		    break;
 		case 'zoneMain.selectInput':
 		    adapter.getObject('zoneMain.selectInput', (err, obj) => {
-			sendRequest(decodeState(obj.common.states + 'FN', state).toUpperCase());
+			sendRequest(decodeState(obj.common.states, state).toUpperCase());
 		    });
 		    break;
 		case 'zoneMain.quickSelect':

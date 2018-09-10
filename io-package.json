@@ -567,6 +567,48 @@
 			}
 		},
 		{
+			"_id": "zoneMain.InputTV",
+			"type": "state",
+			"common": {
+				"name": "Input TV",
+				"role": "button",
+				"type": "boolean",
+				"write": true,
+				"read": false
+			},
+			"native": {
+				
+			}
+		},
+		{
+			"_id": "zoneMain.InputGame",
+			"type": "state",
+			"common": {
+				"name": "Input Game",
+				"role": "button",
+				"type": "boolean",
+				"write": true,
+				"read": false
+			},
+			"native": {
+				
+			}
+		},
+		{
+			"_id": "zoneMain.Input Internet Radio",
+			"type": "state",
+			"common": {
+				"name": "Treble Down",
+				"role": "button",
+				"type": "boolean",
+				"write": true,
+				"read": false
+			},
+			"native": {
+				
+			}
+		},
+		{
 			"_id": "display",
 			"type": "channel",
 			"common": {

@@ -1,7 +1,7 @@
 {
 	"common": {
 		"name": "pioneer",
-		"version": "0.3.6",
+		"version": "0.3.7",
 		"news": {
 			"0.3.6": {
 				"en": "Fixes for old Denon displayContent, readme fixes, minor naming fixes",

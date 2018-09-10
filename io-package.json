@@ -259,7 +259,7 @@
 			"common": {
 				"name": "Select input",
 				"role": "media.input",
-				"type": "number",
+				"type": "string",
 				"write": true,
 				"read": true,
 				"states": {

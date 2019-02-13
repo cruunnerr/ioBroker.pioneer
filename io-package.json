@@ -263,19 +263,19 @@
 				"write": true,
 				"read": true,
 				"states": {
-					"0": "00FN", //phono
-					"1": "01FN", //cd
-					"2": "02FN", //tuner
-					"3": "04FN", //dvd
-					"4": "25FN", //bd
-					"5": "05FN", //tv
-					"6": "SAT/CBL", //SAT/CBL
+					"0": "00FN",
+					"1": "01FN",
+					"2": "02FN",
+					"3": "04FN",
+					"4": "25FN",
+					"5": "05FN",
+					"6": "SAT/CBL",
 					"7": "MPLAY",
-					"8": "49FN", //game
+					"8": "49FN",
 					"9": "NET",
 					"10": "SPOTIFY",
 					"11": "LASTFM",
-					"12": "38FN", //internet radio
+					"12": "38FN",
 					"13": "SERVER",
 					"14": "FAVORITES",
 					"15": "AUX1",
